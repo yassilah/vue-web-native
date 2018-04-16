@@ -6,7 +6,7 @@
 **Vue+Web+Native** is a boilerplate based on [**Vue**](https://vuejs.org/) and [**Nativescript**](https://nativescript-vue.org) that allows for simultaneous development of web and native applications. 
 
 ## Contents
-- [Features](#features)
+- [Before we start](#before-we-start)
 - [Installation](#installation)
 - [Configuration](#configuration)
 - [Usage](#usage)
