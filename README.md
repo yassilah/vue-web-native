@@ -32,8 +32,8 @@
 ## Installation
 If you want to try it out **Vue+Web+Native** is set up with default values.
 ```
-git clone https://github.com/yassipad/vue-cli-web-native.git
-cd vue-cli-web-native
+git clone https://github.com/yassipad/vue-web-native.git
+cd vue-web-native
 ```
 
 Then you simply need to install the dependencies.
@@ -58,7 +58,7 @@ Second, you also need to make sure that your **src** folder contains an **assets
 
 Third, you will notice that the **package.json** file contains this:
 `"nativescript" : {
-  "id": "org.vuewebapp.app"
+  "id": "org.vuenativeweb.app"
 }`. This key is **asbolutely** required as this corresponds to your **App Id**. This will automatically get copied into the right places for you, you are free to change it but do not remove it.
 
 ## Usage
