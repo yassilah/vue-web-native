@@ -1,0 +1,39 @@
+{
+  "name": "vue-native-web",
+  "description": "description",
+  "version": "1.0.0",
+  "license": "MIT",
+  "readme": "",
+  "nativescript": {
+    "id": "org.vuenativeweb.app"
+  },
+  "scripts": {
+    "dev-server":
+      "platform=web webpack-dev-server --config node_modules/vue-native-web --open",
+    "build": "action=build webpack --config node_modules/vue-native-web",
+    "build:native": "action=build webpack --config node_modules/vue-native-web",
+    "build:ios": "platform=ios npm run build:native",
+    "build:android": "platform=android npm run build:native",
+    "build:web": "platform=web npm run build",
+    "watch": "npm run dev-server -- --watch & npm run watch:native",
+    "watch:native":
+      "action=run webpack --config node_modules/vue-native-web --watch",
+    "watch:ios": "platform=ios npm run watch:native",
+    "watch:android": "platform=android npm run watch:native",
+    "watch:web": "npm run dev-server",
+    "debug": "npm run dev-server & npm run debug:native",
+    "debug:native": "action=debug webpack --config node_modules/vue-native-web",
+    "debug:ios": "platform=ios npm run debug:native",
+    "debug:android": "platform=android npm run debug:native",
+    "hot": "npm run dev-server -- --hot",
+    "dev": "platform=web webpack --config node_modules/vue-native-web"
+  },
+  "dependencies": {
+    "nativescript-vue": "^1.3.1",
+    "tns-core-modules": "^3.4.1",
+    "vue": "^2.5.16"
+  },
+  "devDependencies": {
+    "vue-native-web": "^1.0.5"
+  }
+}
